@@ -24,6 +24,7 @@ Plugin 'Valloric/YouCompleteMe'
 Plugin 'nvie/vim-flake8'
 Plugin 'tpope/vim-fugitive'
 Plugin 'bling/vim-airline'
+Plugin 'scrooloose/nerdtree'
 
 call vundle#end()
 
@@ -131,6 +132,12 @@ map <leader>e :edit %%
 
 " tagbar:
 noremap <F8> :TagbarToggle<cr>
+
+" NERDTree:
+autocmd StdinReadPre * let s:std_in=1
+autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif
+map <C-n> :NERDTreeToggle<CR>
+autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
 
 " golang:
 "let g:go_bin_path=expand('~/.go/bin')

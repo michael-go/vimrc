@@ -22,6 +22,7 @@ Plugin 'ekalinin/Dockerfile.vim'
 Plugin 'kien/rainbow_parentheses.vim'
 Plugin 'Valloric/YouCompleteMe'
 Plugin 'nvie/vim-flake8'
+Plugin 'tpope/vim-fugitive'
 
 call vundle#end()
 

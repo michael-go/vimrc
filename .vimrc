@@ -34,6 +34,8 @@ filetype plugin indent on
 syntax on
 set hidden
 set autoread
+set wildmenu
+set wildmode=longest,list,full
 
 " Temporary files stuff
 set nobackup

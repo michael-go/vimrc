@@ -196,3 +196,9 @@ au VimEnter * RainbowParenthesesActivate
 au Syntax * RainbowParenthesesLoadRound
 au Syntax * RainbowParenthesesLoadSquare
 au Syntax * RainbowParenthesesLoadBraces
+
+" YouCompleteMe
+set completeopt-=preview
+"let g:ycm_autoclose_preview_window_after_completion = 0
+"let g:ycm_autoclose_preview_window_after_insertion = 0
+
